@@ -116,6 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
+# Source ROS 1 installation
 alias sr1="source /opt/ros/noetic/setup.bash"
+# Source ROS 2 installation
 alias sr2="source /opt/ros/foxy/setup.bash"
+# Source ROS 2 overlay
+alias sr2l="source install/local_setup.bash"
+# Source ROS 1 overlay
+alias sr1l="source devel/setup.bash"
+
