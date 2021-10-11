@@ -129,5 +129,5 @@ alias build_bridge="echo 'Running command: colcon build --packages-select ros1_b
 
 
 # cd aliases
-alias c = "cd .."
-alias cc = "cd ../.." # Overrides the usual c compiler command
+alias c="cd .."
+alias cc="cd ../.." # Overrides the usual c compiler command
