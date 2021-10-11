@@ -124,4 +124,10 @@ alias sr2="source /opt/ros/foxy/setup.bash"
 alias sr2l="source install/local_setup.bash"
 # Source ROS 1 overlay
 alias sr1l="source devel/setup.bash"
+alias build_bridge="echo 'Running command: colcon build --packages-select ros1_bridge --cmake-force-configure' && colcon build --packages-select ros1_bridge --cmake-force-configure"
 
+
+
+# cd aliases
+alias c = "cd .."
+alias cc = "cd ../.." # Overrides the usual c compiler command
