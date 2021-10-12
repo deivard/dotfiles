@@ -10,4 +10,4 @@ i3-wm.client.focused.color.child_border: #834333
 gnome.terminal.background-transparency-percent: 20
 gnome.terminal.use-transparent-background: true
 
-gnome.wallpaper: /home/johan3z/Pictures/solar_system.png
+gnome.wallpaper: /home/$USER/Pictures/solar_system.png
