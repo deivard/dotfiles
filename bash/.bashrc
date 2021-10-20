@@ -124,6 +124,8 @@ alias sr2="source /opt/ros/foxy/setup.bash"
 alias sr2l="source install/local_setup.bash"
 # Source ROS 1 overlay
 alias sr1l="source devel/setup.bash"
+# Source Trident msgs_ws
+alias sr2lmsgs="source ~/TRIDENT-2021/trident_software/msgs_ws/install/local_setup.bash"
 alias build_bridge="echo 'Running command: colcon build --packages-select ros1_bridge --cmake-force-configure' && colcon build --packages-select ros1_bridge --cmake-force-configure"
 
 
