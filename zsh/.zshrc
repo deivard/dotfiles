@@ -107,15 +107,17 @@ source $ZSH/oh-my-zsh.sh
 alias c="cd .."
 alias cc="cd ../.." # Overrides the usual c compiler command
 
+alias python="python3"
+alias py="python3"
+
 # Better ls
-alias ll="eza -l -g -a --icons"
-alias llt="eza -1 -a --icons --tree"
+alias ll="eza -l -g -a --icons always"
+alias llt="eza -1 -a --icons always --tree"
 
 export PATH="$PATH:/home/jdev/.local/bin"
 
 eval "$(zoxide init --cmd cd zsh)"
 
-eval "$(starship init zsh)"
 
 # Is this needed?
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -134,3 +136,10 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+eval "$(starship init zsh)"
