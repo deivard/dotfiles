@@ -114,6 +114,8 @@ alias py="python3"
 alias ll="eza -l -g -a --icons always"
 alias llt="eza -1 -a --icons always --tree"
 
+alias lg="lazygit"
+
 export PATH="$PATH:/home/jdev/.local/bin"
 
 eval "$(zoxide init --cmd cd zsh)"
