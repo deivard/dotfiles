@@ -40,11 +40,13 @@ TPM: <https://github.com/tmux-plugins/tpm>
 Install: `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 
 ## EZA
+
 Replaces the traditional ls command.
 
 Eza: <https://github.com/eza-community/eza>
 
 ### Zoxide
+
 Replaces CD.
 
 <https://github.com/ajeetdsouza/zoxide>
@@ -52,6 +54,7 @@ Replaces CD.
 Install by running `curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh`
 
 ## fzf
+
 Fuzzy finder
 
 ```
@@ -60,9 +63,11 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ```
 
 ## LazyGit
+
 Lazy is good.
 
 Install on Ubuntu:
+
 ```
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
@@ -70,3 +75,13 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 ```
 
+## Anaconda
+
+I prefer miniforge since it does not require a license for organizations.
+
+Installation:
+
+```
+wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+bash Miniforge3-$(uname)-$(uname -m).sh
+```
