@@ -123,14 +123,14 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/jdev/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/jdev/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/jdev/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/jdev/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/jdev/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/home/jdev/miniforge3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/jdev/miniconda3/bin:$PATH"
+        export PATH="/home/jdev/miniforge3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -158,6 +158,9 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH=/home/jdev/Qt/6.5.3/gcc_64/bin/:$PATH
+export PATH=/home/jdev/Qt/Tools/QtCreator/bin/:$PATH
 
 
 export PATH="$PATH:/mnt/c/Program Files/Win32yank"
