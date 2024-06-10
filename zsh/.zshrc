@@ -71,6 +71,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+        docker
 	git
 	zsh-autosuggestions
 )
@@ -159,4 +160,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+export PATH="$PATH:/mnt/c/Program Files/Win32yank"
+export PATH=/home/jdev/Qt/6.7.1/gcc_64/bin:$PATH
+export PATH=/home/jdev/Qt/Tools/QtCreator/bin/:$PATH
+
 eval "$(starship init zsh)"
+
+
