@@ -163,6 +163,8 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:/mnt/c/Program Files/Win32yank"
 export PATH=/home/jdev/Qt/6.7.1/gcc_64/bin:$PATH
 export PATH=/home/jdev/Qt/Tools/QtCreator/bin/:$PATH
+# To get correct NVCC version
+export PATH=/usr/local/cuda/bin:$PATH
 
 eval "$(starship init zsh)"
 
