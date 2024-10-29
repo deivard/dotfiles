@@ -163,11 +163,22 @@ export PATH=/home/jdev/Qt/6.5.3/gcc_64/bin/:$PATH
 export PATH=/home/jdev/Qt/Tools/QtCreator/bin/:$PATH
 
 
-export PATH="$PATH:/mnt/c/Program Files/Win32yank"
-export PATH=/home/jdev/Qt/6.7.1/gcc_64/bin:$PATH
-export PATH=/home/jdev/Qt/Tools/QtCreator/bin/:$PATH
-# To get correct NVCC version
-export PATH=/usr/local/cuda/bin:$PATH
+# export PATH="$PATH:/mnt/c/Program Files/Win32yank"
+# # export PATH=/home/jdev/Qt/6.7.1/gcc_64/bin:$PATH
+# export PATH=/home/jdev/Qt/Tools/QtCreator/bin/:$PATH
+# export PATH=/home/jdev/dev/android-platform-tools/:$PATH
+# # To get correct NVCC version
+# export PATH=/usr/local/cuda/bin:$PATH
+
+typeset -a sources
+sources+="${HOME}/.zshrc.local"  # Machine local exports
+
+# try to include all sources
+for file in $sources[@]; do
+    if [ -f "$file" ]; then
+        source "$file"
+    fi
+done
 
 eval "$(starship init zsh)"
 
