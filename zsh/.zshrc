@@ -159,17 +159,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH=/home/jdev/Qt/6.5.3/gcc_64/bin/:$PATH
-export PATH=/home/jdev/Qt/Tools/QtCreator/bin/:$PATH
-
-
-# export PATH="$PATH:/mnt/c/Program Files/Win32yank"
-# # export PATH=/home/jdev/Qt/6.7.1/gcc_64/bin:$PATH
-# export PATH=/home/jdev/Qt/Tools/QtCreator/bin/:$PATH
-# export PATH=/home/jdev/dev/android-platform-tools/:$PATH
-# # To get correct NVCC version
-# export PATH=/usr/local/cuda/bin:$PATH
-
 typeset -a sources
 sources+="${HOME}/.zshrc.local"  # Machine local exports
 
