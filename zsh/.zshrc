@@ -112,8 +112,9 @@ alias python="python3"
 alias py="python3"
 
 # Better ls
-alias ll="eza -l -g -a --icons always"
+alias ll="eza -l -g -a --icons always --total-size"
 alias llt="eza -1 -a --icons always --tree"
+alias lldt="eza -1 -a --icons always --tree -Dl --total-size"
 
 alias lg="lazygit"
 
