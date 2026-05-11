@@ -4,6 +4,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Path to Neovim installed with prebuilt archive
+# See: https://neovim.io/doc/install/#:~:text=Linux-,Pre%2Dbuilt%20archives,-The%20Releases%20page
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
