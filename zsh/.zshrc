@@ -177,3 +177,5 @@ done
 eval "$(starship init zsh)"
 
 export EDITOR=nvim
+
+. "$HOME/.cargo/env"
