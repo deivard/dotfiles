@@ -78,6 +78,7 @@ plugins=(
         docker
 	git
 	zsh-autosuggestions
+        zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -179,3 +180,21 @@ eval "$(starship init zsh)"
 export EDITOR=nvim
 
 . "$HOME/.cargo/env"
+
+# zsh-vi-mode config
+# -------------
+ZVM_CLIPBOARD_COPY_CMD='win32yank.exe -i --crlf'
+ZVM_CLIPBOARD_PASTE_CMD='win32yank.exe -o --lf'
+
+# Only changing the escape key to `jk` in insert mode, we still
+# keep using the default keybindings `^[` in other modes
+ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
+# To get autosuggest to work, gets automatically executed
+function zvm_after_init() {
+    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+    bindkey '`' autosuggest-accept
+    bindkey '<C-Space>' autosuggest-fetch
+    bindkey '^l' forward-word
+    bindkey '' autosuggest-clear
+}
