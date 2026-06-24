@@ -183,6 +183,7 @@ export EDITOR=nvim
 
 # zsh-vi-mode config
 # -------------
+ZVM_SYSTEM_CLIPBOARD_ENABLED=true
 ZVM_CLIPBOARD_COPY_CMD='win32yank.exe -i --crlf'
 ZVM_CLIPBOARD_PASTE_CMD='win32yank.exe -o --lf'
 
